@@ -12,7 +12,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #g4g4g4;
+            background-color: #f4f4f4;
         }
         .login-container {
             background: #fff;
@@ -70,13 +70,14 @@
             var password = document.getElementById('password').value;
 
             // Aquí puedes poner la lógica de autenticación
-            if (username === 'presupuesto' && password === 'presupuesto') {
+            if (username === 'usuario' && password === 'contraseña') {
                 // Redirige a otra página web en caso de éxito
-                window.location.href = 'https://app.powerbi.com/view?r=eyJrIjoiZGY0MGQ5YTgtMTQ0Ni00NDBiLWIxYjktNjFjZjFiM2E0MWJmIiwidCI6ImUyNThhOGEyLWQzMmItNDI1Yy1hNzJmLWFjZTJkN2Y4YTg5YiJ9';
+                window.location.href = 'inicio.html';
             } else {
                 alert('Nombre de usuario o contraseña incorrectos');
             }
         });
     </script>
+
 </body>
 </html>
