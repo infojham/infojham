@@ -48,11 +48,18 @@
         .login-container button:hover {
             background-color: #0056b3;
         }
+	.logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+
     </style>
 </head>
 <body>
     <div class="login-container">
-        <h2>Iniciar Sesión</h2>
+        <img src="image/logo.png" alt="Logo">
+	<h2>Iniciar Sesión</h2>
         <form id="loginForm">
             <label for="username">Nombre de Usuario</label>
             <input type="text" id="username" name="username" required>
