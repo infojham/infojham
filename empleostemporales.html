@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="refresh" content="600;url=https://infojham.github.io/infojham">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Contenido en iFrame</title>
+    <style>
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+        nav a {
+            text-decoration: none;
+	    font-family: 'Arial', Arial
+	    font-weight: bold
+            color: White;
+	    font-size: 16px;
+            margin-right: 10px;
+	    background-color: #FDF6DA
+        }
+        nav a:hover {
+            text-decoration: underline;
+	    font-family: 'Arial', Arial
+	    font-weight: bold
+            color: White;
+        }
+    </style>
+</head>
+<body>
+    <nav class="a">
+        <a href="#" onclick="loadIframe('https://app.powerbi.com/view?r=eyJrIjoiZGY0MGQ5YTgtMTQ0Ni00NDBiLWIxYjktNjFjZjFiM2E0MWJmIiwidCI6ImUyNThhOGEyLWQzMmItNDI1Yy1hNzJmLWFjZTJkN2Y4YTg5YiJ9')">PRESUPUESTO</a>
+        
+        <a href="EJECUCION_AL_13-09-2024 - 09.00.xlsx" download="EJECUCION_AL_13-09-2024 - 09.00.xlsx">Descargar Reporte Presupuesto</a>
+    </nav>
+    
+    <iframe id="content-frame" src="inicio3.html"></iframe>
+
+    <script>
+        function loadIframe(url) {
+            document.getElementById('content-frame').src = url;
+        }
+    </script>
+</body>
+</html>
