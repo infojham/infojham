@@ -5,8 +5,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
     <title>Contenido en iFrame</title>
     <style>
         iframe {
@@ -31,12 +29,25 @@
 	    font-weight: bold
             color: White;
         }
+
+	@keyframes resaltar {
+            0% { background-color: yellow; }
+            50% { background-color: transparent; }
+            100% { background-color: yellow; }
+        }
+        .texto-resaltado {
+            font-family: 'Arial', Arial
+            font-weight: bold;
+            font-size: 16px;
+            padding: 2px;
+            animation: resaltar 1s infinite alternate;
+        }
+
     </style>
 </head>
 <body>
 
-        <p>
-		<a src="image/logo.png"</a>
+        <p class="texto-resaltado">
 		<a> Descargar reportes Excel >>> </a>
 		<a href="#" onclick="loadIframe('REPORTE_EJECUCION 2024.xlsx')">REPORTE 2024</a>
 		<a> - </a>
