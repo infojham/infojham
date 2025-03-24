@@ -33,6 +33,19 @@
 	    font-weight: bold
             color: White;
         }
+	
+	@keyframes resaltar {
+            0% { background-color: yellow; }
+            50% { background-color: transparent; }
+            100% { background-color: yellow; }
+        }
+        .texto-resaltado {
+            font-weight: bold;
+            font-size: 24px;
+            padding: 5px;
+            animation: resaltar 1s infinite alternate;
+        }
+
     </style>
 </head>
 <body>
@@ -42,6 +55,7 @@
 	<a href="#" onclick="loadIframe('https://app.powerbi.com/view?r=eyJrIjoiMTdmNzBkZTgtZThlNS00YzIxLWJkYzQtMjk4OWEwOWIwOWJjIiwidCI6IjUzNmE4MmRkLTc2YzAtNDUxYS05Y2QxLTIyOTJiYzBjMmM1OCJ9')">PRESUPUESTO 2025</a>
 
         <p>
+		<a src="image/logo.png"</a>
 		<a href="#" onclick="loadIframe('REPORTE_EJECUCION 2024.xlsx')">REPORTE 2024</a>
 		<a href="#" onclick="loadIframe('REPORTE_EJECUCION 2025.xlsx')">REPORTE 2025</a>
 
